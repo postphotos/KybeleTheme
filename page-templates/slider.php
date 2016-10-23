@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Slider
+Template Name: Slider Page
 */
 get_header(); ?>
 
