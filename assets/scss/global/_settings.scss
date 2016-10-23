@@ -380,7 +380,7 @@ $mediaobject-image-width-stacked: 100%;
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
-$menu-item-color-active: $white;
+$menu-item-color-active: $red;
 $menu-item-background-active: #121212;
 $menu-icon-spacing: 0.25rem;
 
@@ -399,7 +399,7 @@ $meter-fill-bad: $alert-color;
 
 $offcanvas-size: 100%;
 //$offcanvas-background: $light-gray;
-//$offcanvas-background: white;
+$offcanvas-background: white;
 $offcanvas-zindex: -1;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
@@ -537,12 +537,12 @@ $thumbnail-radius: $global-radius;
 // 34. Title Bar
 // -------------
 
-$titlebar-background: $black;
+$titlebar-background: $white;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
+$titlebar-icon-color: $red;
+$titlebar-icon-color-hover: $black;
 $titlebar-icon-spacing: 0.25rem;
 
 // 35. Tooltip
@@ -560,8 +560,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: #121212;
+$topbar-background: $white;
 $topbar-submenu-background: $topbar-background;
-$topbar-link-color: #fff;
+$topbar-link-color: $black;
 $topbar-input-width: 200px;
-$topbar-unstack-breakpoint: medium;
+$topbar-unstack-breakpoint: large;
