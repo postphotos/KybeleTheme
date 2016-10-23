@@ -7,10 +7,6 @@ get_header(); ?>
 
 	<?php /* Start loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
-
-<?php
-} 
-?>
 		<div id="content" role="main">
 				<div class="bkg-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" alt="Image" />
 					<br />
