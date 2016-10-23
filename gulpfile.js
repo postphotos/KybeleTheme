@@ -29,10 +29,10 @@ var COMPATIBILITY = [
 // File paths to various assets are defined here.
 var PATHS = {
   sass: [
-    'assets/homepage.sass'
     'assets/components/foundation-sites/scss',
     'assets/components/motion-ui/src',
     'assets/components/fontawesome/scss',
+    'assets/scss/homepage',
   ],
   javascript: [
     'assets/components/what-input/what-input.js',

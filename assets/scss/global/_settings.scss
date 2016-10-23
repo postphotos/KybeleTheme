@@ -48,21 +48,22 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fff;
+$red: #BF111A;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: $red,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$body-font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -196,7 +197,7 @@ $input-error-font-weight: $global-weight-bold;
 $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-item-color: foreground($accordion-background, $primary-color);
-$accordion-item-background-hover: $light-gray;
+$accordion-item-background-hover: $white;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $light-gray;
@@ -396,8 +397,9 @@ $meter-fill-bad: $alert-color;
 // 24. Off-canvas
 // --------------
 
-$offcanvas-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-size: 100%;
+//$offcanvas-background: $light-gray;
+//$offcanvas-background: white;
 $offcanvas-zindex: -1;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
