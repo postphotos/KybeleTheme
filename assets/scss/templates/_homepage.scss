@@ -1,3 +1,38 @@
+.background-wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%; 
+}
+.background {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    clip: auto;
+    left: 0;
+    object-fit: cover;
+}
+.page {
+    z-index: 3;
+}
+.large-6 {
+    background: rgba(255,255,255,0.6);
+    height: 100%;
+}
+
+.bkg-image {
+    background-size:cover;
+    background-attachment: fixed;
+    height: 9999px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 img.displayed {
     display: block;
     margin-left: auto;
@@ -11,8 +46,101 @@ body.home {
 .home-lower-content {
     padding-top: 10px;
     border-top: 1px $light-gray solid;
+    background: white;
     position: fixed;
     bottom: 0;
     left: 0;
   }
   
+
+  .top-bar .menu a {
+color: black;
+}
+
+.top-bar .menu li:not(:last-child) {
+border: none;
+}
+
+.top-bar .menu a:hover:not(.button) {
+background: white;
+color:red;
+}
+
+.home-lower-content {
+border-top: 0px;
+}
+
+.top-bar .dropdown.menu .submenu {
+background: white;
+}
+
+.top-bar a {
+text-transform: lowercase;
+}
+
+header#masthead {
+z-index: 2;
+}
+
+h3 {
+    text-decoration: underline;
+    -moz-text-decoration-color: red; /* Code for Firefox */
+    text-decoration-color: red;
+}
+.logo-big {
+        display:none;
+    }
+
+.logo-small {
+    display:inherit;
+    top: -12px;
+    position: relative;
+    height: 50px;
+}
+    }
+
+.header-wrapper-home {
+    background: white; 
+    height: inherit;
+}
+
+@media screen and (min-width: 64em) {
+    body.home .logo-small {
+        display:none;
+    }
+
+    body.home .logo-big {
+        display:inherit;
+    }
+    body.home .header-wrapper-home {
+        background: white; 
+        height: 190px;
+    }
+    .top-bar-right{
+        padding-top:100px;
+    }
+
+}
+
+.menu .active > a {
+    color: $red;
+    background: white;
+}
+
+
+#backvid {
+    height: auto;
+    left: -50%;
+    position: fixed;
+    /* top: -30%; */
+    width: 170%;
+}
+
+
+.top-bar .top-bar-left, .top-bar .top-bar-right {
+    width: auto;
+}
+
+.top-bar, .top-bar ul {
+    margin: 0;
+}

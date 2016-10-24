@@ -8,8 +8,19 @@ get_header( 'home' ); ?>
 	<?php /* Start loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
-
+		<style type="text/css">
+		#backvid {
+    height: auto;
+    left: -50%;
+    position: fixed;
+    /* top: -30%; */
+    width: 170%;
+}</style>
 		<div id="content" role="main">
+			<video id="backvid" autoplay="" loop="">
+			  <source src="<?php echo get_field('video_url'); ?>" type="video/mp4">
+			 Your browser does not support the video tag.
+			</video>
 			<div class="background-wrapper">
 				<img class="background" src="<?php the_post_thumbnail_url(); ?>">
 			</div>

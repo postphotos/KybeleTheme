@@ -10,10 +10,6 @@ get_header(); ?>
 
 
 	<div id="content" role="main">
-			<div class="background-wrapper">
-				<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				?><img class="background" src="<?php the_post_thumbnail_url(); ?>"><?php } ?>
-			</div>
 				<div class="page row">
 					<div class=".large-offset-1 large-6 end columns">
 						<header>
@@ -24,7 +20,14 @@ get_header(); ?>
 							<h1><?php the_title(); ?></h1>
 							<?php echo $content; ?>
 						</div>
+
+						<?php if( have_rows('grid_section') ): ?> 
+
+									<p> celebrate</p>
+							<?php endif; ?>
 					</div>
+
+
 				</div>
 
 

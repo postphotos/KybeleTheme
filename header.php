@@ -39,7 +39,11 @@
 			<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 				<div class="top-bar-left">
 					<ul class="menu">
-						<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+						<div class='logo-small'><img src="wp-content/themes/kybele/assets/images/logos/KDT-LOGO.svg" style="width: 50px; height: auto;" alt="Kybele Dance Theatre"></div>
+
+						<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<div class='logo-small'><img src="wp-content/themes/kybele/assets/images/logos/KDT-LOGO.svg" style="width: 50px; height: auto;" alt="Kybele Dance Theatre"></div>
+						</a></li>
 					</ul>
 				</div>
 				<div class="top-bar-right">
