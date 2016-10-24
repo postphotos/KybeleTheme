@@ -51,10 +51,16 @@ body.home {
     bottom: 0;
     left: 0;
   }
+
+
+#backvid {
+   display: none;
+}
   
 
-  .top-bar .menu a {
-color: black;
+
+.top-bar .menu a {
+    color: black;
 }
 
 .top-bar .menu li:not(:last-child) {
@@ -97,7 +103,6 @@ h3 {
     position: relative;
     height: 50px;
 }
-    }
 
 .header-wrapper-home {
     background: white; 
@@ -120,20 +125,21 @@ h3 {
         padding-top:100px;
     }
 
-}
-
-.menu .active > a {
-    color: $red;
-    background: white;
-}
-
-
-#backvid {
+    #backvid {
+    display: inherit;
     height: auto;
     left: -50%;
     position: fixed;
     /* top: -30%; */
     width: 170%;
+    }
+
+
+}
+
+.menu .active > a {
+    color: $red;
+    background: white;
 }
 
 
